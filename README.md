@@ -76,5 +76,4 @@ Skirt | 1.00 | 0.75 | 0.86
 T-shirt | 0.83 | 0.92 | 0.87
 
 -Confuion matrix:
-![Confusion Matrix](
-F:\Work\git_repos\machine_learning_task_part_2\cm.png)
+![Confusion Matrix](https://github.com/ahmedanwar88/machine_learning_task_part_2/blob/main/cm.png)
