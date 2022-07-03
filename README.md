@@ -87,7 +87,13 @@ T-shirt | 0.83 | 0.92 | 0.87
         - Shirt: predicted as longsleeve or outwear.
         - Dress: predicted as t-shirt.
         - Shorts: predicted as pants.
-2. Receptive Field
+2. Improvements
+    - The test results can be improved using several approaches:
+        - Hyperparamter tuning.
+        - Using more augmentations.
+        - Collecting more data.
+        - Fine-tuning the last layers of the base model (MobileNetV2) to adapt the high level features to this problem.
+3. Receptive Field
     - The receptive field is calculated to be 491 in x and y dimensions.
     - The receptive field can be increased/decreased by the following approaches:
         - Adding more convolutional layers (making the network deeper) increases the receptive field and vice versa.
@@ -95,7 +101,7 @@ T-shirt | 0.83 | 0.92 | 0.87
         - Adding dilated convolutions can increase the receptive field.
         - Adding more pooling layers can increase the receptive field.
 
-3. FLOPS and MAACs
+4. FLOPS and MAACs
     - The most 10 computationally expensive layers are reported to be:
 
         Layer | FLOPS
