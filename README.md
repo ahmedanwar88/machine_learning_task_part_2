@@ -74,3 +74,7 @@ Shoes | 1.00 | 0.99 | 0.99
 Shorts | 0.96 | 0.77 | 0.85
 Skirt | 1.00 | 0.75 | 0.86
 T-shirt | 0.83 | 0.92 | 0.87
+
+-Confuion matrix:
+![Confusion Matrix](
+F:\Work\git_repos\machine_learning_task_part_2\cm.png)
