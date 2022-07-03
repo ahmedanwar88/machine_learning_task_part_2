@@ -61,6 +61,7 @@ This repository includes part 2 solution of the Machine Learning task.
 
 - The best checkpoint has a CCE loss of 0.46 and an accuracy of 85.48% on the unseen test data.
 - Precision, recall and F1-score:
+
 Class | Precision | Recall | F1-score
  ------------ | ------------- | ------------ | ------------- 
 Dress | 0.73 | 0.73 | 0.73 
