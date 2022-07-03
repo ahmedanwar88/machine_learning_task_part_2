@@ -28,9 +28,17 @@ This repository includes part 2 solution of the Machine Learning task.
     - This dataset contains the most 10 popular classes: dress, hat, longsleeve, outwear, pants, shirt, shoes, shorts, skirt and t-shirt.
     - The dataset is split into training, validation and test sets.
     - I chose this dataset and not the larger one because the larger dataset contains irrelevant classes such as: not sure and skip, and some other classes have very few images. Therefore, I chose the 10-class dataset as I think it would be better for training a classifier for production.
-    
+
 2. Dataset visualization and preparation
+    - I visualized the distribution of the training, validation and test sets.
+    - The training set contains 3068 images, the validation set contains 341 images and the test set contains 372 images.
+    - The class 't-shirt' has the largest number of images in the dataset.
+    - The visualization of the dataset distribution is provided in the notebook.
 3. Model selection and training
+    - I chose transfer learning approach to train a classifier for classifying the images into 10 classes.
+    - I chose transfer learning approach because the dataset is not large, and I think that it is better to start from a pre-trained model trained on a large dataset to use that knowledge in this problem. I think this is better than training a model from scratch which requires a large dataset. Moreover, I think that transfer learning approach is better for generalization in this case, and especially if this model runs in production.
+    - I chose MobileNetV2 as a base model, and initialized its weights using ImageNet weights. I found that ImageNet dataset contains close images to this problem, which helps in transfer learning in this case as the clothing dataset domain is close to the domain of the ImageNet dataset.
+    - I added a global average pooling layer and a dense layer with 10 neurons (corresponding to the 10 classes) with a softmax activation function on top of the baseline MobileNetV2 model.
 4. Model evaluation and error analysis
 5. Receptive field calculation
 6. FLOPS and MAACs calculation
