@@ -45,15 +45,22 @@ This repository includes part 2 solution of the Machine Learning task.
     - I used the MobileNetV2 base model as a feature extractor and froze its weights, and trained only the classifier head.
     - I trained the model with Adam optimizer using a learning rate of 0.0001 for 200 epochs.
     - I used categorical cross entropy as the loss function.
-    - The best checkpoint can be found as a Keras .hdf5 file at: [Best Checkpoint](https://drive.google.com/file/d/1-5yrB8P9lJbRbR2ZNqratGDGNgz7TXzP/view?usp=sharing)
+    - The best checkpoint can be found as a Keras .hdf5 file at: [Best Checkpoint](https://drive.google.com/file/d/1-5yrB8P9lJbRbR2ZNqratGDGNgz7TXzP/view?usp=sharing).
 4. Model evaluation and error analysis
     - I calculated the accuracy, loss, precision, recall, F1-score and confusion matrix using the best checkpoint and the unseen test data.
     - I chose these metrics for a better error analysis to identify the classes that the classifier predicts correctly and the classes that the classifier has problems in their predictions.
 5. Receptive field calculation
+    - I used this repository to calculate the receptive field of the model: [Repo.](https://github.com/google-research/receptive_field).
+    - The overall receptive field is reported to be 491.
 6. FLOPS and MAACs calculation
+    - I used this repository to calculate MAACs and FLOPS of every layer in the model: [Repo.](https://github.com/ckyrkou/Keras_FLOP_Estimator).
+    - The reported MAACs and FLOPS for every layer is reported in the notebook.
+    - I added a function to get the most computationally expensive layers and their MAACS and FLOPS. The desired number of layers can be configured by the user.
 
 ## Results
 
+- The best checkpoint has a CCE loss of 0.46 and an accuracy of 85.48% on the unseen test data.
+- Precision, recall and F1-score:
 Class | Precision | Recall | F1-score
  ------------ | ------------- | ------------ | ------------- 
 Dress | 0.73 | 0.73 | 0.73 
