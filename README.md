@@ -23,7 +23,12 @@ This repository includes part 2 solution of the Machine Learning task.
 ## Approach
 
 1. Selecting and downloading the dataset
-    - I chose the clothing images dataset available at: [Dataset](https://github.com/alexeygrigorev/clothing-dataset-small)
+    - I chose the clothing images dataset available at: [Dataset](https://github.com/alexeygrigorev/clothing-dataset-small).
+    - This dataset is subset of the dataset available at: [Dataset](https://www.kaggle.com/datasets/agrigorev/clothing-dataset-full).
+    - This dataset contains the most 10 popular classes: dress, hat, longsleeve, outwear, pants, shirt, shoes, shorts, skirt and t-shirt.
+    - The dataset is split into training, validation and test sets.
+    - I chose this dataset and not the larger one because the larger dataset contains irrelevant classes such as: not sure and skip, and some other classes have very few images. Therefore, I chose the 10-class dataset as I think it would be better for training a classifier for production.
+    
 2. Dataset visualization and preparation
 3. Model selection and training
 4. Model evaluation and error analysis
