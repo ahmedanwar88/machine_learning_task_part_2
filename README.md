@@ -50,10 +50,10 @@ This repository includes part 2 solution of the Machine Learning task.
     - I calculated the accuracy, loss, precision, recall, F1-score and confusion matrix using the best checkpoint and the unseen test data.
     - I chose these metrics for a better error analysis to identify the classes that the classifier predicts correctly and the classes that the classifier has problems in their predictions.
 5. Receptive field calculation
-    - I used this repository to calculate the receptive field of the model: [Repo.](https://github.com/google-research/receptive_field).
+    - I used this repository to calculate the receptive field of the model: [Repo](https://github.com/google-research/receptive_field).
     - The overall receptive field is reported to be 491.
 6. FLOPS and MAACs calculation
-    - I used this repository to calculate MAACs and FLOPS of every layer in the model: [Repo.](https://github.com/ckyrkou/Keras_FLOP_Estimator).
+    - I used this repository to calculate MAACs and FLOPS of every layer in the model: [Repo](https://github.com/ckyrkou/Keras_FLOP_Estimator).
     - The MAACs and FLOPS for every layer are reported in the notebook.
     - I added a function to get the most computationally expensive layers and their MAACS and FLOPS. The desired number of layers can be configured by the user.
 
