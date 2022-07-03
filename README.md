@@ -89,6 +89,11 @@ T-shirt | 0.83 | 0.92 | 0.87
         - Shorts: predicted as pants.
 2. Receptive Field
     - The receptive field is calculated to be 491 in x and y dimensions.
+    - The receptive field can be increased/decreased by the following approaches:
+        - Adding more convolutional layers (making the network deeper) increases the receptive field and vice versa.
+        - Increasing/decreasing kernel sizes increases/decreases the receptive field.
+        - Adding dilated convolutions can increase the receptive field.
+        - Adding more pooling layers can increase the receptive field.
 
 3. FLOPS and MAACs
     - The most 10 computationally expensive layers are reported to be:
@@ -105,3 +110,13 @@ T-shirt | 0.83 | 0.92 | 0.87
         block_11_expand | 21676032.0
         block_11_project | 21676032.0
         block_12_expand | 21676032.0
+    - The number of FLOPS and MAACs can be decreased by the following approaches:
+        - Model Design
+            - Using smaller kernel sizes in the convolutional layers.
+            - Using smaller number of filters in the convolutional layers.
+            - Using smaller number of convolutional layers.
+            - Using maxpooling layers to decrease the dimentionality of the feature maps.
+        - Model Optimization
+            - Pruning can decrease the number of FLOPS and MAACs by removing the reduntant weights or layers.
+            - Knowledge distillation can help in obtaining a smaller model with less FLOPS and MAACs from the larger model.
+            - Quantization can decrease the floating point operations (fp32 -> 4 bytes) to integer operations (int8 -> 1 byte) which decreases the model size and inference time.
