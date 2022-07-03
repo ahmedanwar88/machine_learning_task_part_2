@@ -23,7 +23,7 @@ This repository includes part 2 solution of the Machine Learning task.
 ## Approach
 
 1. Selecting and downloading the dataset
-    - I chose the clothing images dataset available at: LINK : [Dataset](https://github.com/alexeygrigorev/clothing-dataset-small)
+    - I chose the clothing images dataset available at: [Dataset](https://github.com/alexeygrigorev/clothing-dataset-small)
 2. Dataset visualization and preparation
 3. Model selection and training
 4. Model evaluation and error analysis
