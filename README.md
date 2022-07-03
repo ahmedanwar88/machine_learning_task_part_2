@@ -40,7 +40,7 @@ This repository includes part 2 solution of the Machine Learning task.
 3. Model selection and training
     - I chose transfer learning approach to train a classifier for classifying the images into 10 classes.
     - I chose transfer learning approach because the dataset is not large, and I think that it is better to start from a pre-trained model trained on a large dataset to use that knowledge in this problem. I think this is better than training a model from scratch which requires a large dataset. Moreover, I think that transfer learning approach is better for generalization in this case, and especially if this model runs in production.
-    - I chose MobileNetV2 as a base model, and initialized its weights using ImageNet weights. I found that ImageNet dataset contains close images to this problem, which helps in transfer learning in this case as the clothing dataset domain is close to the domain of the ImageNet dataset.
+    - I chose MobileNetV2 as a base model due to its lightweight architecture, and initialized its weights using ImageNet weights. I found that ImageNet dataset contains close images to this problem, which helps in transfer learning in this case as the clothing dataset domain is close to the domain of the ImageNet dataset.
     - I added a global average pooling layer and a dense layer with 10 neurons (corresponding to the 10 classes) with a softmax activation function on top of the baseline MobileNetV2 model.
     - I used the MobileNetV2 base model as a feature extractor and froze its weights, and trained only the classifier head.
     - I trained the model with Adam optimizer using a learning rate of 0.0001 for 200 epochs.
