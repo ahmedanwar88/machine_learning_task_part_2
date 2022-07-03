@@ -1,4 +1,4 @@
-# machine_learning_task_part_2
+# Machine Learning Task Part 2
 This repository includes part 2 solution of the Machine Learning task.
 
 ## Repository structure
