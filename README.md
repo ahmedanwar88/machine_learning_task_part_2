@@ -92,16 +92,16 @@ T-shirt | 0.83 | 0.92 | 0.87
 
 3. FLOPS and MAACs
     - The most 10 computationally expensive layers are reported to be:
-    
-Layer | FLOPS
------------- | -------------
-Conv_1 | 40140800.0
-block_1_expand | 38535168.0
-block_16_project | 30105600.0
-Conv1 | 21676032.0
-block_2_expand | 21676032.0
-block_2_project | 21676032.0
-block_3_expand | 21676032.0
-block_11_expand | 21676032.0
-block_11_project | 21676032.0
-block_12_expand | 21676032.0
+
+        Layer | FLOPS
+        ------------ | -------------
+        Conv_1 | 40140800.0
+        block_1_expand | 38535168.0
+        block_16_project | 30105600.0
+        Conv1 | 21676032.0
+        block_2_expand | 21676032.0
+        block_2_project | 21676032.0
+        block_3_expand | 21676032.0
+        block_11_expand | 21676032.0
+        block_11_project | 21676032.0
+        block_12_expand | 21676032.0
