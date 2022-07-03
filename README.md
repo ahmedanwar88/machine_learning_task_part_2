@@ -54,7 +54,7 @@ This repository includes part 2 solution of the Machine Learning task.
     - The overall receptive field is reported to be 491.
 6. FLOPS and MAACs calculation
     - I used this repository to calculate MAACs and FLOPS of every layer in the model: [Repo.](https://github.com/ckyrkou/Keras_FLOP_Estimator).
-    - The reported MAACs and FLOPS for every layer is reported in the notebook.
+    - The MAACs and FLOPS for every layer are reported in the notebook.
     - I added a function to get the most computationally expensive layers and their MAACS and FLOPS. The desired number of layers can be configured by the user.
 
 ## Results
