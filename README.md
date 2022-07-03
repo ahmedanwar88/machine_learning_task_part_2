@@ -13,7 +13,22 @@ This repository includes part 2 solution of the Machine Learning task.
 
 ## Steps
 
+1. Selecting and downloading the dataset
+2. Dataset visualization and preparation
+3. Model selection and training
+4. Model evaluation and error analysis
+5. Receptive field calculation
+6. FLOPS and MAACs calculation
+
 ## Approach
+
+1. Selecting and downloading the dataset
+    - I chose the clothing images dataset available at: LINK : [Dataset](https://github.com/alexeygrigorev/clothing-dataset-small)
+2. Dataset visualization and preparation
+3. Model selection and training
+4. Model evaluation and error analysis
+5. Receptive field calculation
+6. FLOPS and MAACs calculation
 
 ## Results
 
