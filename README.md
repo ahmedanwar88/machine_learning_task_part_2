@@ -9,8 +9,8 @@ This repository includes part 2 solution of the Machine Learning task.
 2. Receptive_Field_Calculation.ipynb: This notebooks includes calculating the receptive field of the used classifier model.
 3. MAACs_FLOPs_Calculation.ipynb: This notebook includes calculating MAACs and FLOPS for each layer in the used classifier model.
 
-- The 'utils' directory includes two modified Python scripts that need to be replaced in the repositories used to calculate the receptive field and FLOPS and MAACs. More information is provided in the notebooks.
- 
+-The 'utils' directory includes two modified Python scripts that need to be replaced in the repositories used to calculate the receptive field and FLOPS and MAACs. More information is provided in the notebooks.
+
 ## Steps
 
 ## Approach
