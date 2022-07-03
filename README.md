@@ -80,3 +80,10 @@ T-shirt | 0.83 | 0.92 | 0.87
 ![Confusion Matrix](https://github.com/ahmedanwar88/machine_learning_task_part_2/blob/main/cm.png)
 
 ## Comments and Discussions
+
+1. F1-scores and confusion matrix
+    - From the F1-scores, it is clear that most of the classes are classified correctly. The lowest F1-scores are for shirt (0.60) and dress (0.73).
+    - From the confusion matrix, it is clear that most confusions are between:
+        - Shirt: predicted as longsleeve or outwear.
+        - Dress: predicted as t-shirt.
+        - Shorts: predicted as pants.
